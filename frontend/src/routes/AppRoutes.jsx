@@ -3,8 +3,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 // Auth pages
 import SigninPage from "../pages/auth/SigninPage";
 import SignupPage from "../pages/auth/SignupPage";
-// import ForgotPasswordPage from "../pages/auth/ForgotPasswordPage";
-// import ResetPasswordPage from "../pages/auth/ResetPasswordPage";
+import LandingPage from "../pages/landing/LandingPage";
+
 
 // App pages 
 
@@ -33,7 +33,7 @@ export default function AppRoutes() {
   return (
     <Routes>
       {/* Default route */}
-      <Route path="/" element={<Navigate to="/signin" replace />} />
+      <Route path="/" element={<LandingPage />} />
       
       {/* Auth routes */}
       <Route path="/signin" element={<SigninPage />} />
