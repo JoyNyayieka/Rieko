@@ -21,7 +21,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
               },
             },
           },
-          fontFamily: "CrimsonPro, sans-serif",
+          
         }}
       >
         <Notifications position='top-right' />
