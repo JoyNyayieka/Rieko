@@ -1,0 +1,32 @@
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes scroll-up {
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-image-column {
+  will-change: transform;
+}
+
+.hero-image-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .hero-image-column {
+    animation: none !important;
+  }
+}
