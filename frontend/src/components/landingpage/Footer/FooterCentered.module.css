@@ -1,5 +1,4 @@
 .footer {
-  margin-top: 120px;
   padding-top: calc(var(--mantine-spacing-xl) * 2);
   font-family: 'Outfit', serif;
   color: #e5f0ff;
