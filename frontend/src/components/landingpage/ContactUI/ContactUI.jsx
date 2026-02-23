@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { Box, Button, Container, Stack, Text, em } from "@mantine/core";
 import { useMediaQuery } from "@mantine/hooks";
 import HoverLinkSection from "./HoverLinkSection";
+import Marquee from "react-fast-marquee";
 
 export default function ContactUI() {
   const navigate = useNavigate();
@@ -9,7 +10,11 @@ export default function ContactUI() {
 
   const goToContact = () => navigate("/contact");
 
+  const phrase =
+    ' • SUBSCRIBE TO THE NEWSLETTER ';
+
   return (
+    <>
     <HoverLinkSection onNavigate={goToContact} isMobile={isMobile}>
       <Container size="sm">
         <Stack align="center" gap={isMobile ? 16 : 10}>
@@ -60,5 +65,23 @@ export default function ContactUI() {
         </Stack>
       </Container>
     </HoverLinkSection>
+
+      <Box bg="#66A3FF" py={24}>
+        <Marquee speed={200} autoFill>
+          <Text         
+            size='xl'
+            fw={700}
+            style={{ 
+              fontFamily: 'ZillaSlab-SemiBold', 
+              color: '#001433', 
+              whiteSpace:'nowrap',
+              letterSpacing: '0.1em',    
+            }}
+          >
+            {phrase}&nbsp;&nbsp;{phrase}
+          </Text>
+        </Marquee>
+      </Box>
+      </>
   );
 }
