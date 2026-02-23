@@ -14,7 +14,7 @@ export default function Hero() {
     >
       <HeroImages />
       
-      <Container fluid px={16} py="xl" pb={70} 
+      <Container fluid px={16} py="xl" pb={28} 
         style={{
             minHeight: '100vh',
             display: 'flex',
