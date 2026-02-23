@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Box, Image } from '@mantine/core';
 import { heroImageData, animationConfig } from './heroImgs';
 import './HeroImages.css';
@@ -57,14 +56,9 @@ const HeroImages = () => {
         position: 'absolute',
         right: 0,
         top: '7.5%',
-        height: '100%',
+        height: '95%',
         width: '50%',
         overflow: 'hidden',
-      }}
-      sx={{
-        '@media (max-width: 768px)': {
-          display: 'none',
-        },
       }}
     >
       <Box
