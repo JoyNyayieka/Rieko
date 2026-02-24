@@ -1,5 +1,7 @@
-// export const AUTH = {
-//   LOGIN: "/auth/login/",
-//   REGISTER: "/auth/register/",
-//   REFRESH: "/auth/token/refresh/",
-// };
+export const ENDPOINTS = {
+  AUTH: {
+    SIGNIN: "/auth/signin/",
+    SIGNUP: "/auth/signup/",
+    // FORGOT_PASSWORD: "/auth/forgot-password/",
+  },
+};
