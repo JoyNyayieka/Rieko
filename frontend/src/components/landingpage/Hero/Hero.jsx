@@ -2,17 +2,20 @@ import React from 'react'
 import { Container, Stack, Group, Title, Text, Box } from '@mantine/core'
 import Marquee from "react-fast-marquee";
 import HeroImages from './HeroImages';
+import { useMediaQuery } from "@mantine/hooks";
 
 export default function Hero() {
   const marqueeText =
     ' • TECH • DESIGN • MEDIA • CREATORS • BUILDERS • LEADERS • IDEAS • SKILLS • CAREERS';  
-  
+  const isMobile = useMediaQuery("(max-width: 820px)");
+
+
   return (
     <section
       style={{ minHeight: '100vh' }}
       className="w-full bg-digital-blue-50 text-digital-blue-900 font-extrabold overflow-hidden"
     >
-      <HeroImages />
+      {!isMobile && <HeroImages />}
       
       <Container fluid px={16} py="xl" pb={28} 
         style={{
