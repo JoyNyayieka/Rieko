@@ -1,17 +1,16 @@
-import App from './App.jsx'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import "./index.css";
-import { BrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import { MantineProvider } from '@mantine/core'
 import { Notifications } from '@mantine/notifications'
 
 import '@mantine/core/styles.css'
 import "@mantine/notifications/styles.css";
+import Router from './routes/Router';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
       <MantineProvider
         theme={{
           components: {
@@ -25,8 +24,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         }}
       >
         <Notifications position='top-right' />
-        <App />
+        <RouterProvider router={Router} />
       </MantineProvider>
-    </BrowserRouter>
   </React.StrictMode>
 );
