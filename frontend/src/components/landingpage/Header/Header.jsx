@@ -9,10 +9,12 @@ import {
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import classes from './HeaderMegaMenu.module.css';
+import { useNavigate } from 'react-router-dom';
 
 
 export function HeaderMegaMenu() {
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
+  const navigate = useNavigate();
     
    return (
     <Box pb={0}>
@@ -47,6 +49,7 @@ export function HeaderMegaMenu() {
           <Group visibleFrom="sm">
             <Button 
               variant="default" 
+              onClick={() => navigate("/signin")}
               style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433', backgroundColor: '#e5f0ff'}}
               radius="xl"
             >
@@ -54,6 +57,7 @@ export function HeaderMegaMenu() {
             </Button>
               
             <Button 
+              onClick={() => navigate("/signup")}
               style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433', backgroundColor: '#66A3FF'}}
               radius="xl"
             >
@@ -94,12 +98,14 @@ export function HeaderMegaMenu() {
 
           <Group justify="center" grow pb="xl" px="md">
             <Button variant="default"
+              onClick={() => navigate("/signin")}
               style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433', backgroundColor: '#e5f0ff'}}
               radius="xl"
             >
               Log In
             </Button>
             <Button
+              onClick={() => navigate("/signup")}
               style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433', backgroundColor: '#3385FF'}}
               radius="xl"
             >
