@@ -82,7 +82,6 @@ export default function SigninPage() {
                   size="xs"
                   component="button"
                   type="button"
-                  c="#0F3DDE"
                   onClick={() => navigate("/forgot-password")}
                 >
                   Forgot password
@@ -94,12 +93,12 @@ export default function SigninPage() {
             {...form.getInputProps("password")}
           />
 
-          <Checkbox color="#3A5B22"
+          <Checkbox 
             label="Remember for 30 days"
             {...form.getInputProps("remember", { type: "checkbox" })}
           />
 
-          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl" color="#3A5B22">
+          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl">
             Sign In
           </Button>
 
@@ -137,7 +136,7 @@ export default function SigninPage() {
 
           <Text size="sm" ta="center" mt="xs">
             Don't have an account?{" "}
-            <Anchor component="button" type="button" c="#0F3DDE" onClick={() => navigate("/signup")}>
+            <Anchor component="button" type="button" onClick={() => navigate("/signup")}>
               Sign Up
             </Anchor>
           </Text>

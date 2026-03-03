@@ -98,19 +98,19 @@ export default function SignupPage() {
             {...form.getInputProps("password")}
           />
 
-          <Checkbox color="#3A5B22"
+          <Checkbox
             {...form.getInputProps("acceptTerms", { type: "checkbox" })}
             label={
               <Text size="xs">
                 I agree to the{" "}
-                <Anchor size="xs" href="/terms" c="#0F3DDE" target="_blank">
+                <Anchor size="xs" href="/terms" target="_blank">
                   Terms and Conditions
                 </Anchor>{" "}
               </Text>
             }
           />
 
-          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl" color="#3A5B22">
+          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl">
             Sign Up
           </Button>
 
@@ -148,7 +148,7 @@ export default function SignupPage() {
 
           <Text size="sm" ta="center" mt="xs">
             Have an account?{" "}
-            <Anchor component="button" type="button" c="#0F3DDE" onClick={() => navigate("/signin")}>
+            <Anchor component="button" type="button" onClick={() => navigate("/signin")}>
               Sign In
             </Anchor>
           </Text>
