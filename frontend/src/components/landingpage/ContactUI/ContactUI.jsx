@@ -8,7 +8,7 @@ export default function ContactUI() {
   const navigate = useNavigate();
   const isMobile = useMediaQuery(`(max-width: ${em(768)})`);
 
-  const goToContact = () => navigate("/contact");
+  const goToContact = () => navigate("/contactform");
 
   const phrase =
     ' • SUBSCRIBE TO THE NEWSLETTER ';
