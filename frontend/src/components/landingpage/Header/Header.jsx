@@ -32,13 +32,13 @@ export function HeaderMegaMenu() {
           </div>
           
           <Group h="100%" gap={0} visibleFrom="sm">
-            <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
+            <a href="#hero" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
               Home
             </a>
-            <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
+            <a href="#about" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
               About
             </a>            
-            <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
+            <a href="#contact" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
               Contact Us
             </a>
             <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#e5f0ff'}}>
@@ -81,13 +81,13 @@ export function HeaderMegaMenu() {
         <ScrollArea h="calc(100vh - 80px" mx="-md">
           <Divider my="sm" />
 
-          <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
+          <a href="#hero" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
             Home
           </a>
-          <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
+          <a href="#about" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
             About
           </a>          
-          <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
+          <a href="#contact" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
             Contact Us
           </a>
           <a href="#" className={classes.link} style={{ fontFamily: 'ZillaSlab-SemiBold', color: '#001433'}}>
