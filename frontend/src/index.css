@@ -34,3 +34,7 @@
   --color-digital-blue-950: #000e24;
 
 }
+
+html {
+  scroll-behavior: smooth;
+}
