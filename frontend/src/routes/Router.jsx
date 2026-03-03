@@ -12,6 +12,7 @@ import SigninPage from "../pages/auth/SigninPage";
 import SignupPage from "../pages/auth/SignupPage";
 
 import AppLoader from "../components/shared/AppLoader";
+import ContactForm from "../components/landingpage/ContactUI/ContactForm";
 
 /**
  * Phase 2: replace / extend requireAuth() to verify token with backend (e.g. GET /me)
@@ -82,6 +83,7 @@ const router = createBrowserRouter([
     errorElement: <NotFound />,
     children: [
       { path: "/", element: <LandingPage /> },
+      { path: "/contactform", element: <ContactForm /> },
       { path: "/signin", element: <SigninPage /> },
       { path: "/signup", element: <SignupPage /> },
 
