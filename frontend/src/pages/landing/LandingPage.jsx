@@ -10,11 +10,11 @@ import ExpertCTA from '../../components/landingpage/ExpertCTA'
 export default function LandingPage() {
   return (
     <LandingLayout>
-        <Hero />
-        <About/>
-        <FAQs/>
-        <ExpertCTA/>
-        <ContactUI/>
+      <section id="hero"><Hero /></section>
+      <section id="about"><About/></section>      
+      <FAQs/>
+      <ExpertCTA/>
+      <section id="contact"><ContactUI/></section>      
     </LandingLayout>
   )
 }
