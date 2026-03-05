@@ -98,7 +98,7 @@ export default function SigninPage() {
             {...form.getInputProps("remember", { type: "checkbox" })}
           />
 
-          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl">
+          <Button type="submit" fullWidth loading={loading} bg="digitalBlue.9" mt="xs" radius="xl">
             Sign In
           </Button>
 

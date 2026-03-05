@@ -110,7 +110,7 @@ export default function SignupPage() {
             }
           />
 
-          <Button type="submit" fullWidth loading={loading} mt="xs" radius="xl">
+          <Button type="submit" fullWidth loading={loading} mt="xs" bg="digitalBlue.9" radius="xl">
             Sign Up
           </Button>
 
